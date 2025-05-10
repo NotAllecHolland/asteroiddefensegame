@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>asteroid defense game</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroid Defense Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="hud">
+            <div>SCORE: <span id="score-value">0</span></div>
+            <div>LEVEL: <span id="level-value">1</span></div>
+        </div>
+        
+        <div id="health-bar-container">
+            <div id="health-bar"></div>
+        </div>
+        
+        <div id="title-screen" class="game-ui">
+            <h1>ASTEROID DEFENSE</h1>
+            <p>Earth is under attack from asteroid swarms! Control your defense ship to destroy the asteroids before they reach Earth.</p>
+            <p>
+                <strong>CONTROLS:</strong><br>
+                ← → Arrow Keys: Rotate ship<br>
+                SPACEBAR: Fire laser
+            </p>
+            <button id="start-button">START MISSION</button>
+        </div>
+        
+        <div id="game-over-screen" class="game-ui hide">
+            <h1 id="game-over">EARTH DESTROYED</h1>
+            <p>The asteroids have breached our defenses. Earth has fallen.</p>
+            <p>FINAL SCORE: <span id="final-score">0</span></p>
+            <button id="restart-button">TRY AGAIN</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
